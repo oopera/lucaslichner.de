@@ -60,6 +60,7 @@ function displaySof(){
 		aboutMe.classList.remove('display');
 		email.classList.remove('display');
 	}else{
+		window.scrollTo(0, 0);
 		sofPort.classList.remove('display');
 	}
 }
