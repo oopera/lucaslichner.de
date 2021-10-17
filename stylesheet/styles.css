@@ -1,0 +1,289 @@
+/* lato-regular - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/lato-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  }
+
+body {
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+body.scrollable {
+	overflow-y: scroll;
+}
+
+body.dark {
+	background-color: black;
+}
+
+
+h1 {
+	padding-top: 500px;
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 300%;
+}
+
+
+h2 {
+	color: black;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 175%;
+}
+
+h2.dark {
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 175%;
+}
+
+p {
+	color:black ;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size:150;
+}
+
+p.dark {
+	color:white ;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size:150;
+}
+
+a {
+	color:black;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size:100%;
+}
+
+a.dark {
+	color:white;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size:100%;
+}
+
+#switch{
+	text-decoration: underline;
+}
+
+.porttext{
+	text-decoration: underline;
+}
+
+.introcard{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+
+.introcard.display-none{
+	width: 100%;
+	height: 100%;
+	padding-top: 25px;
+	z-index: -10;
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.Header-Container {
+	border: 1px black solid;
+	width: 100%;
+	height: 80px;
+	grid-column-gap:5%;
+    display: inline-grid;
+    grid-template-columns: 40% auto auto auto auto auto auto;
+	width: 99%;
+	margin-left: 0px;
+	align-items: center;
+}
+
+.Header-Container.dark {
+	border: 1px white solid;
+	width: 100%;
+	height: 80px;
+	grid-column-gap:5%;
+    display: inline-grid;
+    grid-template-columns: 40% auto auto auto auto auto auto;
+	width: 100%;
+	margin-left: auto;
+	align-items: center;
+}
+
+.Sideinfo{
+	position: fixed;
+	bottom: 85;
+	align-items: center;
+	z-index: 10;
+}
+
+#digIllus{
+	display: none;
+}
+#digIllus.display{
+	display: grid
+}
+
+#digIllus2.dont-display{
+	display: none;
+}
+#digIllus2{
+	display: grid;
+}
+
+#grafDes{
+	display: none;
+}
+#grafDes.display{
+	display: grid;
+}
+
+#grafDes2.dont-display{
+	display: none;
+}
+#grafDes2{
+	display: grid;
+}
+
+.Article{
+	position: absolute;
+	display: grid;
+	grid-template-rows: (10%);
+	grid-template-columns: 15% 60% 15%;
+	font-size: 200%x;
+	grid-column-gap:5%;
+	height: 100%;
+	padding-top:50px;
+	padding-left:1%;
+}
+
+
+.portfolioOptions{
+	display: none;
+	transition: 0.2s;
+	z-index: -20;
+	opacity: 0;
+}
+
+.portfolioOptions.display{
+	display:grid;
+	transition: 0.2s;
+	z-index: 5;
+	opacity: 1;
+}
+.Content{
+	 grid-column-start: 2;
+  	 grid-column-end: 2;
+}
+
+.aboutme{
+	z-index: 0;
+	opacity: 0;
+}
+
+.aboutme.display{
+	z-index: 5;
+	opacity: 1;
+}
+
+.GraphicDesign{
+	position: absolute;
+	padding-right: 500px;
+	transition: 0.5s;
+	grid-column-start: 2;
+  	grid-column-end: 4;
+  	display:grid;
+  	grid-template-columns: 1fr 1fr;
+  	justify-content: center;
+	top: 0;
+	z-index: -10;
+	opacity: 0;
+	height: 0%;
+	width: 0%;
+}
+
+.GraphicDesign.display{
+	padding-right: 0px;
+	margin-top: 50px;
+   z-index: 5;
+   opacity: 1;
+   height: 100%;
+   width: 92%;
+   padding-bottom: 50px;
+}
+
+.Illustrations{
+	padding-top: 50px;
+	padding-left: 500px;
+	transition: 0.5s;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+  	grid-template-rows: 1fr 1fr; 
+  	justify-content: center;
+	z-index: -10;
+	opacity: 0;
+	height: 0%;
+	width: 0%;
+}
+
+.Illustrations.display{
+	padding-top: 0px;
+	padding-left: 0px;
+   z-index: 5;
+   opacity: 1;
+   height: 100%;
+   width: 92%;
+}
+
+ .Poster{
+	padding-right: 70px;
+ 	width: 90%;
+ 	height: 90%;
+ }
+
+.Poster img{
+	border: 1px black solid;
+	width: 100%;
+	height: 100%;
+	max-width: 400px;
+	max-height: 400px;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	align-items: center;
+}
+
+
+@keyframes fadeIn{
+	to{
+		opacity: 1;
+	}
+}
+
+.fade-in{
+	opacity: 0;
+	animation: fadeIn 0.5s ease-in forwards;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
