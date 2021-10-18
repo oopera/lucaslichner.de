@@ -18,10 +18,6 @@ window.onbeforeunload = function () {
 	window.scrollTo(0, 0);
   }
 
-/* 
-<div class="introcard" id="introcard">
-  <h1 class='fade-in'> lucaslichner </h1>
-  </div>
 
 document.addEventListener('DOMContentLoaded', (e)=>{
 	setTimeout(()=>{
@@ -30,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 		illusPort.classList.remove('display');
 
 	},2000);
-}) */
+}) 
 
 function displayOptions(){
 	if(digIllus.classList.contains('display') == false){
