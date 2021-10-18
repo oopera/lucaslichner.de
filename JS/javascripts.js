@@ -142,7 +142,7 @@ for (let i = 0; i < switchoo.length; i++) {
 	document.getElementById('switch').innerHTML = 'light';
 	body.classList.remove('dark');
 	heading.classList.remove('dark');
-	headerbox[0].classList.add('dark');
+	headerbox[0].classList.remove('dark');
 	for (let i = 0; i < switchoo.length; i++) {
 		switchoo[i].style.color = 'black' 
 	}
