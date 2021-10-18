@@ -53,6 +53,7 @@ function displayOptions(){
 
 function displaySof(){
 	if(sofPort.classList.contains('display') == false){
+		window.scrollTo(0, 0);
 		body.classList.remove('scrollable');
 		illusPort.classList.remove('display');
 		graphicPort.classList.remove('display');
