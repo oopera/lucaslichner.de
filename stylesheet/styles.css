@@ -1,0 +1,401 @@
+/* lato-regular - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/lato-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  }
+
+
+html{
+	height: 100%;
+	margin: 0;
+}
+  
+body {
+	background-color:white;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+body.scrollable {
+	overflow-y: scroll;
+	overflow-x: hidden ;
+}
+
+body.dark {
+	background-color: rgb(37, 37, 37);
+}
+
+.mobileAccess{
+	opacity: 0;
+	z-index: -10;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: black;
+
+}
+
+
+h1 {
+	padding-top: 500px;
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 300%;
+}
+h2 {
+	color: black;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 175%;
+}
+h2.dark {
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 175%;
+}
+p {
+	color:black ;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size:150;
+}
+p.dark {
+	color:white ;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size:150;
+}
+
+a {
+	color:black;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size:100%;
+}
+
+a.dark {
+	color:white;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size:100%;
+}
+
+.porttext{
+	text-decoration: underline;
+}
+
+.introcard{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: black;
+	z-index: 10;
+}
+
+.introcard.display-none{
+	width: 100%;
+	height: 100%;
+	padding-top: 25px;
+	z-index: -10;
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.Header-Container {
+	margin-top: 5px;
+	position: fixed;
+	background: white;
+	z-index: 10;
+	border-top: 2px black solid;
+	border-bottom: 2px black solid;
+	width: 100%;
+	height: 80px;
+	grid-column-gap:5%;
+    display: inline-grid;
+    grid-template-columns: 35% auto auto auto auto auto auto;
+	align-items: center;
+}
+
+.Header-Container.dark {
+	background: rgb(37, 37, 37);
+	border-top: 2px white solid;
+	border-bottom: 2px white solid;
+}
+
+.Sideinfo{
+	top: 100px;
+	position: fixed;
+	align-items: center;
+	z-index: 10;
+}
+
+#sofDev{
+	display: none;
+}
+#sofDev.display{
+	display: grid
+}
+
+#sofDev2.dont-display{
+	display: none;
+}
+
+
+#sofDev2{
+	display: grid;
+}
+
+#digIllus{
+	display: none;
+}
+#digIllus.display{
+	display: grid
+}
+
+#digIllus2.dont-display{
+	display: none;
+}
+#digIllus2{
+	display: grid;
+}
+
+#grafDes{
+	display: none;
+}
+#grafDes.display{
+	display: grid;
+}
+
+#grafDes2.dont-display{
+	display: none;
+}
+#grafDes2{
+	display: grid;
+}
+
+.Article{
+	position: absolute;
+	display: grid;
+	grid-template-rows: (10%);
+	grid-template-columns: 50% 50%;
+	font-size: 200%x;
+	grid-column-gap:5%;
+	height: 100vw;
+	padding-top:50px;
+	margin-left:25%;
+	margin-right:25%;
+}
+
+.portfolioOptions{
+	display: none;
+	transition: 0.2s;
+	z-index: -20;
+	opacity: 0;
+}
+
+.portfolioOptions.display{
+	display:grid;
+	transition: 0.2s;
+	z-index: 5;
+	opacity: 1;
+}
+
+.aboutme{
+	display: none;
+	z-index: -10;
+	opacity: 0;
+}
+
+.aboutme.display{
+	display:flex;
+	z-index: 5;
+	opacity: 1;
+}
+
+.email{
+	display: none;
+	z-index: -10;
+	opacity: 0;
+}
+
+.email.display{
+	display:grid;
+	z-index: 5;
+	opacity: 1;
+}
+
+.SoftwareDevelopment{
+	transition: 0.5s;
+  	grid-template-columns: 1fr 1fr;
+  	justify-content: center;
+	top: 0;
+	z-index: -10;
+	opacity: 0;
+	width: 20px;
+}
+
+.SoftwareDevelopment.display{
+	padding-right: 0px;
+	padding-top: 150px;
+    z-index: 5;
+    opacity: 1;
+    height: 100%;
+    width: 50vw;
+}
+
+.GraphicDesign{
+	position: absolute;
+	margin-top: 120px;
+	transition: 0.5s;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+	display:grid;
+  	grid-template-columns: 1fr 1fr 1fr 1fr;
+  	justify-content: center;
+	z-index: -10;
+	opacity: 0;
+	float: left;
+
+}
+
+.GraphicDesign.display{
+	border: solid black 1pt;
+	padding-right: 25vw;
+	padding-left: 25vw;
+    z-index: 5;
+    opacity: 1;
+    height: 100%;
+    width: 92%;
+}
+
+.Illustrations{
+
+	position: absolute;
+	margin-top: 120px;
+	transition: 0.5s;
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+  	justify-content: center;
+	z-index: -10;
+	opacity: 0;
+}
+
+.Illustrations.display{
+	border: black solid 1pt;
+	padding-left: 25vw;
+	padding-right: 25vw;
+    z-index: 5;
+    opacity: 1;
+    height: 100%;
+    width: 92%;
+}
+
+ .Poster{
+	border: black solid 1pt;
+	padding: 5px;
+ 	width: 70%;
+ 	height: 70%;
+ }
+
+.infotext{
+	border-bottom: solid  black 1pt;
+	border-top: solid  black 1pt;
+}
+img {
+	margin-bottom:10px ;
+	height: 25vw;
+	width: 25vw;
+	max-width: 400px;
+	max-height: 400px;
+    transition:transform 0.25s ease;
+}
+
+
+img:hover {
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+	-webkit-filter: drop-shadow(5px 5px #222);
+	filter: drop-shadow(5px 5px #222);
+}
+
+.topNav{
+	display: none;
+	text-align: center;
+	margin-left: 25% ;
+	margin-right: 25% ; 
+	transition: 0.5s;
+	width: 50%;
+	margin-top: 100px;
+}
+
+.topNav.top{
+	margin-top: 0px;
+}
+@media only screen and (max-width: 600px){
+	.GraphicDesign.display{
+		  grid-template-columns: 1fr ;
+	}
+	.Illustrations.display{
+		grid-template-columns: 1fr;
+
+	}
+	.Poster img{
+	height: 70vw;
+	width: 70vw;
+	}
+	.Poster img:hover {
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+	}
+	.topNav{
+		display: inline-flex;
+	}
+
+	.Sideinfo{
+		display: none;
+	}
+
+	#portButton{
+		display: none;
+	}
+
+}
+
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	align-items: center;
+	float: right;
+	z-index: 20;
+}
+
+
+@keyframes fadeIn{
+	to{
+		opacity: 1;
+	}
+}
+
+.fade-in{
+	opacity: 0;
+	animation: fadeIn 0.5s ease-in forwards;
+}
+
+::-webkit-scrollbar {
+
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
