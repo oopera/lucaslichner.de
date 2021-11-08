@@ -1,5 +1,5 @@
 //These should probably only be initialized in Function, but this was easier at the time. 
-
+const fadein = document.getElementById('fadein');
 const introScreen = document.getElementById('introcard');
 const aboutMe = document.getElementById('aboutMe');
 const digIllus = document.getElementById('digIllus');
@@ -13,8 +13,7 @@ const sofDev2 = document.getElementById('sofDev2');
 const sofPort = document.getElementById('SoftwareDevelopment');
 const body = document.getElementById('bawdy');
 const email = document.getElementById('Email');
-
-
+const container = document.getElementById('pageContainer');
 
 
 
@@ -22,19 +21,15 @@ window.onbeforeunload = function () {
 	window.scrollTo(0, 0);
   }
 
-/* 
-<div class="introcard" id="introcard">
-  <h1 class='fade-in'> lucaslichner </h1>
-  </div>
 
 document.addEventListener('DOMContentLoaded', (e)=>{
 	setTimeout(()=>{
 		introScreen.classList.add('display-none');
-		illusPort.classList.add('display');
-		illusPort.classList.remove('display');
+			document.getElementById('fadein').innerHTML = 'dark';
+	
 
 	},2000);
-}) */
+}) 
 
 function displayOptions(){
 	if(digIllus.classList.contains('display') == false){
@@ -60,8 +55,8 @@ function displayOptions(){
 
 function displaySof(){
 	if(sofPort.classList.contains('display') == false){
-		window.scrollTo(0, 0);
-		body.classList.remove('scrollable');
+		container.scrollTo(0, 0);
+		container.classList.remove('scrollable');
 		illusPort.classList.remove('display');
 		graphicPort.classList.remove('display');
 		sofPort.classList.add('display')
@@ -76,40 +71,39 @@ function displaySof(){
 
 function displayGraphic(){
 	if(graphicPort.classList.contains('display') == false){
-		body.classList.add('scrollable');
-		illusPort.classList.remove('display');
 		graphicPort.classList.add('display');
+		container.classList.add('scrollable');
+		illusPort.classList.remove('display');
 		aboutMe.classList.remove('display');
 		email.classList.remove('display');
 		sofPort.classList.remove('display');
 
 	}else{
 		graphicPort.classList.remove('display');
-		window.scrollTo({
+		container.scrollTo({
   top: 0,
   behavior: 'smooth',
 });
-		body.classList.remove('scrollable');
+		container.classList.remove('scrollable');
 	}
 }
 
 
 function displayIllus(){
 	if(illusPort.classList.contains('display') == false){
-		body.classList.add('scrollable');
+		container.classList.add('scrollable');
 		graphicPort.classList.remove('display');
 		illusPort.classList.add('display');
 		aboutMe.classList.remove('display');
 		email.classList.remove('display');
 		sofPort.classList.remove('display');
 	}else{
-
 		illusPort.classList.remove('display');
-		window.scrollTo({
+		container.scrollTo({
   top: 0,
   behavior: 'smooth',
 });
-		body.classList.remove('scrollable');
+		container.classList.remove('scrollable');
 	}
 }
 
@@ -161,8 +155,12 @@ for (let i = 0; i < switchoo.length; i++) {
 
 // THIS IS TESTING 
 
-function changeDisplay(elementToChange){
-	var elemeent = document.getElementById(elementToChange);
+
+
+
+
+function changePageContainerElement(elementToChange){
+	var element = document.getElementById(elementToChange);
 	if(elemeent.classList.contains('display') == false){
 		elemeent.classList.add('display');
 		if(elementToChange == 'Illustrations' || elementToChange == 'GraphicDesign'){
