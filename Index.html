@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="clicks"></html>
+<head>
+<title>Lucas Lichner</title>
+<link rel="stylesheet" href="stylesheet/styles.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="JS/globe.js"></script>
+
+<script src="https://www.webglearth.com/v2/api.js"></script>
+</head>
+	<body id='bawdy' onload="initialize()">
+
+<div class="introcard" id="introcard">
+  <h1 class='fade-in' id='fadein'> lucaslichner. </h1>
+  </div>
+
+
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <ul id="menu">
+      <a onclick="displaySof()"><li>Software Development</li></a>
+      <a onclick="changePageContainerElement('Illustrations')"><li>Digital Illustrations</li></a>
+      <a onclick="changePageContainerElement('GraphicDesign')"><li>Graphic Design</li></a>
+      <a onclick="displayAboutMe()"><li>Aboutme</li></a>
+    </ul>
+  </div>
+
+  <div class="Header-Container">
+    <div class="header" >
+      <h2 id='headertext'>lucaslichner.</h2>
+    </div>
+      <a class="paragraph" id='hbutton' style="text-decoration: underline;" onclick="displayAboutMe()">About Me</a>
+      <a class="paragraph" id='hbutton' style="text-decoration: underline;" onclick="displayOptions()" id="portButton">Portfolio</a>
+      <a class="paragraph" id='hbutton' href = "https://github.com/oopera.html" target="_blank"> GitHub </a>
+      <a class="paragraph" id='hbutton' href = "https://www.xing.com/profile/Lucas_Lichner/cv" target="_blank2"> Xing</a> 
+    </div>  
+
+   
+
+
+  <div class='Sideinfo'>
+    
+    <p id="sofDev" style="text-decoration: underline;" class="paragraph" onclick="displaySof()">Software Development</p>
+    <p id="digIllus" style="text-decoration: underline;" class="paragraph" onclick="changePageContainerElement('Illustrations')">Digital Illustrations</p>
+    <p id="grafDes" style="text-decoration: underline;" class="paragraph" onclick="changePageContainerElement('GraphicDesign')">Graphic Design</p>
+		
+    <div class="aboutme" id="aboutMe">
+        <p class="paragraph"> I am an HCI Student born in 1999. <a class="paragraph" style="text-decoration: underline;" onclick="displayEmail()"> Want to know more? </a></p>
+    </div>
+
+    <div class="email" id="Email">
+      <p class="paragraph">Shoot me an Email - rileasur@outlook.de </p>
+  </div>
+<div id="earth_div"></div>
+  </div>
+
+<div  id="pageContainer">
+<div class="Article"> 
+<div class="SoftwareDevelopment" id="SoftwareDevelopment">
+  <p class="paragraph"> Youre looking at a part of it! This website was created by myself using HTML/CSS/JS. 
+    Its not much and could be written more concisely, but its also still under construction. 
+    More about my skills can be found on my <a class="paragraph" href = "https://www.xing.com/profile/Lucas_Lichner/cv" target="_blank2"> Xing</a> profile, a small collection of written Code can be found on my <a class="paragraph" href = "https://github.com/oopera.html" target="_blank"> GitHub</a>.
+  </p>
+</div>
+
+
+
+    <div class="Illustrations" id="Illustrations">
+      <div class="Poster">
+        <img src="images\IllU\profile.png" alt="A Person in Profile">
+      </div>
+      <div class="infotext">
+        <p class="paragraph"> AN ILLUSTRATION OF A PERSON IN PROFILE // 2021</p>
+      </div>
+
+      <div class="infotext">
+        <p class="paragraph">  AN ILLUSTRATION OF A WRINKLED PERSON // 2021</p>
+      </div>
+      <div class="Poster">
+        <img src="images\IllU\wrinkles.png" alt="A wrinkled Person">
+      </div>
+
+      <div class="Poster">
+        <img src="images\IllU\mage.png" alt="Mage">
+      </div>
+      <div class="infotext">
+        <p class="paragraph"> AN ILLUSTRATION OF UNDEAD MAGE FROM WARCRAFT // 2021</p>
+      </div>
+
+      <div class="infotext">
+        <p class="paragraph"> AN ILLUSTRATION OF DARTH VADER // 2021</p>
+      </div>
+      <div class="Poster">
+        <img src="images\IllU\dv.png" alt="Darth Vader">
+      </div>
+
+      <div class="Poster">
+        <img src="images\ILLU\asuka.png" alt="A Tiger">
+      </div>
+      <div class="infotext">
+        <p class="paragraph"> AN ILLUSTRATION OF ASUKA LANGLEY, FROM NEON GENESIS EVANGELION // 2020</p>
+      </div>
+
+      <div class="infotext">
+        <p class="paragraph"> AN ILLUSTRATION OF AMÉLIE, FROM THE EPONYMOUS MOVIE // 2020-21</p>
+      </div>
+      <div class="Poster">
+        <img src="images\IllU\amelie.png" alt="An Ox">
+      </div>
+
+      <div class="Poster">
+        <img src="images\ILLU\Tiger.png" alt="A Tiger">
+      </div>
+      <div class="infotext">
+        <p class="paragraph"> AN ILLUSTRATION OF A TIGER, FRAMED AS A VINYL COVER // 2020</p>
+      </div>
+
+      <div class="infotext">
+        <p class="paragraph"> AN ILLUSTRATION OF AN OX, FRAMED AS A VINYL COVER // 2020</p>
+      </div>
+      <div class="Poster">
+        <img src="images\IllU\OXOX.png" alt="An Ox">
+      </div>
+      </div>
+
+
+  <div class="GraphicDesign" id="GraphicDesign">
+    <div class="infotext">
+      <p class="paragraph"> A POSTER REMINISCENT OF CONTEMPORAY POSTER DESIGN // 2021</p>
+    </div>
+    
+    <div class="Poster">
+      <img src="images\GD\ARTSCHOOL.png" alt="ARTSCHOOL">
+    </div>
+
+    <div class="Poster">
+      <img src="images\GD\WALKMAN.png" alt="WALKMAN">
+    </div>
+    <div class="infotext">
+      <p class="paragraph"> A COVER FOR THE SONG "WALKMAN" BY LIQUI.DATA (an alter-ego used by myself) // 2021</p>
+    </div>
+
+    <div class="infotext">
+      <p class="paragraph"> COVER FOR THE SONG <a href="https://soundcloud.com/liquidata/smalllotusbouquet" target="_blank3">SMALLLOTUSBOUQUET</a> BY SELF.EJECT (another alter-ego used by myself) // 2021</p>
+    </div>
+    <div class="Poster">
+      <img src="images\GD\lotus2.png" alt="SMALLLOTUSBOUQUET">
+    </div>
+ 
+    <div class="Poster">
+      <img src="images\GD\askafriend.png" alt="ASK A FRIEND">
+    </div>
+    <div class="infotext">
+      <p class="paragraph"> A GRAPHIC EXCERCISE IN SHAPE, COLOR AND COMPOSITION // 2021</p>
+    </div>
+
+    <div class="infotext">
+      <p class="paragraph"> A COVER FOR THE SONG "BEYOND IMPERFECT" BY OPERA (yet another alter-ego used by myself) // 2021 </p>
+    </div>
+    <div class="Poster">
+      <img src="images\GD\IMPERFECT.jpg" alt="IMPERFECT">
+    </div>
+   
+    <div class="Poster">
+      <img src="images\GD\singularity.png" alt="TIGER">
+    </div>
+        <div class="infotext">
+      <p class="paragraph"> A COVER EXPLORING THE DIGITALIZATION OF CONCIOUSNESS // 2021 </p>
+    </div>
+
+    <div class="infotext">
+      <p class="paragraph"> A EXPLORING THE LIGHTWEIGHTNESS EXPERIENCED FOLLOWING A PHYSICAL ALTERCATION // 2021</p>
+    </div>
+    <div class="Poster">
+      <img src="images\GD\phys.jpg" alt="TIGER">
+    </div>
+
+    <div class="Poster">
+      <img src="images\GD\masspop.png" alt="TIGER">
+    </div>
+        <div class="infotext">
+      <p class="paragraph"> AN EXCERCISE IN FORM, COLOR AND COMPOSITION // 2021</p>
+    </div>
+    </div>
+
+
+
+    </div>
+
+</div>
+
+      <div id='globecontainer'></div>
+    <div class="footer">
+    <p id="switch" class="paragraph" style="text-decoration: underline;" onclick="lightmode()">light</p>
+    <p class="paragraph"> Lucas Lichner - 2021</p>
+    </div>
+    
+    
+<script src="JS/javascripts.js"></script>
+<script src="JS/intro.js"></script>
+
+</body>
+</html>
