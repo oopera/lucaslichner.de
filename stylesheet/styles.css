@@ -1,12 +1,15 @@
 html{
+
 	margin: 0;
-		cursor: crosshair;
+	cursor: crosshair;
+	overflow: hidden
 }
   
 body {
 	background-color:white;
 	margin: 0;
 	height: 100vh;
+	max-height: 100vw;
 	width: 100vw;
 	overflow: hidden
 
