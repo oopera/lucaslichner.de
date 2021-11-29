@@ -65,6 +65,29 @@ function displayAboutMe(){
 }
 
 
+function displayAbootMe(){
+	const abootme = document.querySelector('.abootme');
+	if(abootme.classList.contains('display') == false){
+		abootme.classList.add('display');
+	}else{
+		abootme.classList.remove('display');
+		abootme.classList.remove('display');
+	}
+}
+function hamburgerMenu(){
+	const heado = document.querySelector('.Header-Container');
+	const text = document.querySelector('.hamburger');
+	if(heado.classList.contains('menu') == false){
+		heado.classList.add('menu');
+		text.innerHTML = "close";
+	}else{
+		heado.classList.remove('menu');
+		text.innerHTML = "open";
+	}
+}
+
+
+
 function displayEmail(){
 	if(email.classList.contains('display') == false){
 		email.classList.add('display');
@@ -122,8 +145,3 @@ function changePageContainerElement(elementToChange){
 				});
 		}
 	}
-
-
-/* <div class="topNav">
-       <p style="text-decoration: underline;" class="paragraph" onclick="changePageContainerElement('Illustrations')"> <- Illustration</p> &nbsp;   <p  style="text-decoration: underline;" class="paragraph" onclick="changePageContainerElement('GraphicDesign')"> Grafikdesign -></p> 
-    </div> */
