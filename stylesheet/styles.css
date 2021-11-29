@@ -423,6 +423,7 @@ body{
 }
 .Header-Container{
 	min-width: 250px;
+	margin-left: 15vw;
 	}
 .Header-Container.menu{
 	align-content: center;
