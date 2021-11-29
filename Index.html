@@ -1,4 +1,27 @@
 <!DOCTYPE html>
+<!-- 
+          _____    _____  
+         /\    \  /\    \ 
+        /::\____\/::\____\
+       /:::/    /:::/    /
+      /:::/    /:::/    / 
+     /:::/    /:::/    /  
+    /:::/    /:::/    /   
+   /:::/    /:::/    /    
+  /:::/    /:::/    /     
+ /:::/    /:::/    /      
+/:::/____/:::/____/       
+\:::\    \:::\    \       
+ \:::\    \:::\    \      
+  \:::\    \:::\    \     
+   \:::\    \:::\    \    
+    \:::\    \:::\    \   
+     \:::\    \:::\    \  
+      \:::\    \:::\    \ 
+       \:::\____\:::\____\
+        \::/    /\::/    /
+         \/____/  \/____/ 
+ --> 
 <html lang="clicks"></html>
 <head>
 <title>Lucas Lichner</title>
@@ -14,32 +37,23 @@
   <h1 class='fade-in' id='fadein'> lucaslichner. </h1>
   </div>
 
-
-<nav role="navigation">
-  <div id="menuToggle">
-
-    <input type="checkbox" />
-    
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <ul id="menu">
-      <a onclick="displaySof()"><li>Software Development</li></a>
-      <a onclick="changePageContainerElement('Illustrations')"><li>Digital Illustrations</li></a>
-      <a onclick="changePageContainerElement('GraphicDesign')"><li>Graphic Design</li></a>
-      <a onclick="displayAboutMe()"><li>Aboutme</li></a>
-    </ul>
-  </div>
-
   <div class="Header-Container">
     <div class="header" >
       <h2 id='headertext'>lucaslichner.</h2>
     </div>
-      <a class="paragraph" id='hbutton' style="text-decoration: underline;" onclick="displayAboutMe()">About</a>
+      <a class="paragraph" id='hbutton' style="text-decoration: underline;" onclick="displayAboutMe()">About Me</a>
       <a class="paragraph" id='hbutton' style="text-decoration: underline;" onclick="displayOptions()" id="portButton">Portfolio</a>
-      <a class="paragraph" id='hbutton' href = "https://github.com/oopera.html" target="_blank">GitHub</a>
-      <a class="paragraph" id='hbutton' href = "https://www.xing.com/profile/Lucas_Lichner/cv" target="_blank2">Xing<</a> 
+      <a class="paragraph" id='hbutton' href = "https://github.com/oopera.html" target="_blank"> GitHub </a>
+      <a class="paragraph" id='hbutton' href = "https://www.xing.com/profile/Lucas_Lichner/cv" target="_blank2"> Xing </a> 
+      <a class="hamburger paragraph" onclick="hamburgerMenu()">Open</a>
+      <div class="menuoptions">
+      <ul id="menu">
+      <a class="paragraph" onclick="displaySof()"><li>Software Development</li></a>
+      <a class="paragraph" onclick="changePageContainerElement('Illustrations')"><li>Digital Illustrations</li></a>
+      <a class="paragraph" onclick="changePageContainerElement('GraphicDesign')"><li>Graphic Design</li></a>
+      <a class="paragraph" onclick="displayAbootMe()"><li>About Me</li></a>
+    </ul>
+	</div>
     </div>  
 
    
@@ -47,12 +61,12 @@
 
   <div class='Sideinfo'>
     
-    <p id="sofDev" style="text-decoration: underline;" class="paragraph" onclick="displaySof()">Software Development</p>
-    <p id="digIllus" style="text-decoration: underline;" class="paragraph" onclick="changePageContainerElement('Illustrations')">Digital Illustrations</p>
-    <p id="grafDes" style="text-decoration: underline;" class="paragraph" onclick="changePageContainerElement('GraphicDesign')">Graphic Design</p>
+    <a id="sofDev" style="text-decoration: underline;" class="paragraph" onclick="displaySof()">Software Development</p></a>
+    <a id="digIllus" style="text-decoration: underline;" class="paragraph" onclick="changePageContainerElement('Illustrations')">Digital Illustrations</p></a>
+    <a id="grafDes" style="text-decoration: underline;" class="paragraph" onclick="changePageContainerElement('GraphicDesign')">Graphic Design</p></a>
 		
     <div class="aboutme" id="aboutMe">
-        <p class="paragraph"> I am an HCI Student born in 1999. <br> <a class="paragraph" style="text-decoration: underline;" onclick="displayEmail()"> Want to know more? </a></p>
+        <p class="paragraph"> I am an HCI Student born in 1999. <a class="paragraph" style="text-decoration: underline;" onclick="displayEmail()"> Want to know more? </a></p>
     </div>
 
     <div class="email" id="Email">
@@ -70,7 +84,10 @@
   </p>
 </div>
 
+<div class="abootme"> <a class="paragraph"> I am an HCI Student born in 1999. Want to know more? <br> Shoot men an Email! Rileasur@outlook.de </a>
+    </div>
 
+	
 
     <div class="Illustrations" id="Illustrations">
       <div class="Poster">
@@ -198,7 +215,7 @@
 
       <div id='globecontainer'></div>
     <div class="footer">
-    <p id="switch" class="paragraph" style="text-decoration: underline;" onclick="lightmode()">light</p>
+    <a id="switch" class="paragraph" style="text-decoration: underline;" onclick="lightmode()">light</a>
     <p class="paragraph"> Lucas Lichner - 2021</p>
     </div>
     
