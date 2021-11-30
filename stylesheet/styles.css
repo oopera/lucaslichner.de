@@ -268,7 +268,7 @@ a.dark {
     z-index: 5;
     opacity: 1;
     height: 100vw;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -292,7 +292,7 @@ a.dark {
     z-index: 5;
     opacity: 1;
     height: 100vw;
-    width: 100vw;
+    width: 100%;
 
 }
 
