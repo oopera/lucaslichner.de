@@ -69,11 +69,15 @@ function displayAbootMe(){
 	const abootme = document.querySelector('.abootme');
 	if(abootme.classList.contains('display') == false){
 		abootme.classList.add('display');
+		illusPort.classList.remove('display');
+		graphicPort.classList.remove('display');
+		sofPort.classList.remove('display')
 	}else{
 		abootme.classList.remove('display');
 		abootme.classList.remove('display');
 	}
 }
+
 function hamburgerMenu(){
 	const heado = document.querySelector('.Header-Container');
 	const text = document.querySelector('.hamburger');
