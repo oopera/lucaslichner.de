@@ -127,7 +127,7 @@ for (let i = 0; i < switchoo.length; i++) {
 function changePageContainerElement(elementToChange){
 	var element = document.getElementById(elementToChange);
 	sofPort.classList.remove('display');
-	abootme.classList.add('display');
+	abootme.classList.remove('display');
 	if(element.classList.contains('display') == false){
 
 		container.classList.add('scrollable');
