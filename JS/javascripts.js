@@ -129,6 +129,7 @@ for (let i = 0; i < switchoo.length; i++) {
 function changePageContainerElement(elementToChange){
 	var element = document.getElementById(elementToChange);
 	sofPort.classList.remove('display');
+	abootme.classList.add('display');
 	if(element.classList.contains('display') == false){
 
 		container.classList.add('scrollable');
@@ -149,3 +150,5 @@ function changePageContainerElement(elementToChange){
 				});
 		}
 	}
+
+
