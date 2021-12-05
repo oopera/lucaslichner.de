@@ -1,4 +1,3 @@
-//These should probably only be initialized in Function, but this was easier at the time. 
 const fadein = document.getElementById('fadein');
 const introScreen = document.getElementById('introcard');
 const aboutMe = document.getElementById('aboutMe');
@@ -12,7 +11,7 @@ const email = document.getElementById('Email');
 const container = document.getElementById('pageContainer');
 const body = document.getElementById('bawdy');
 const sidey = document.querySelector('.Sideinfo');
-
+const abootme = document.querySelector('.abootme');
 
 window.onbeforeunload = function () {
 	window.scrollTo(0, 0);
@@ -66,7 +65,6 @@ function displayAboutMe(){
 
 
 function displayAbootMe(){
-	const abootme = document.querySelector('.abootme');
 	if(abootme.classList.contains('display') == false){
 		abootme.classList.add('display');
 		illusPort.classList.remove('display');
