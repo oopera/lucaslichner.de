@@ -425,6 +425,7 @@ body{
 	display: none;
 }
 .Header-Container{
+	grid-template-columns: 35% auto auto auto auto;
 	width: 250px;
 	min-width: 50px;
 	margin-left: calc(50vw - 125px);
