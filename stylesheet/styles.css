@@ -82,16 +82,17 @@ a.dark {
 	z-index: 25;
 	border: 2px black solid;
 	width: 50%;
-	min-width: 520px;
+	min-width: 680px;
 	height: 80px;
 	margin-top: 15px;
 	margin-right: 25vw;
 	margin-left: 25vw;
 	grid-column-gap:5%;
-    grid-template-columns: 35% auto auto auto auto;
+    	grid-template-columns: 30% auto auto auto auto;
 	align-items: center;
 	overflow: hidden;
 	transition: 0.5s;
+	white-space: nowrap;
 }
 
 .Header-Container.dark {
