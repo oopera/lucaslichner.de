@@ -3,6 +3,7 @@ const introScreen = document.getElementById('introcard');
 const aboutMe = document.getElementById('aboutMe');
 const digIllus = document.getElementById('digIllus');
 const sofDev = document.getElementById('sofDev');
+const ui = document.getElementById('ui');
 const grafDes = document.getElementById('grafDes');
 const illusPort = document.getElementById('Illustrations');
 const graphicPort = document.getElementById('GraphicDesign');
@@ -29,10 +30,12 @@ function displayOptions(){
 		sofDev.classList.add('display');
 				digIllus.classList.add('display');
 						grafDes.classList.add('display');
+							ui.classList.add('display');
 	}else{
 		sofDev.classList.remove('display');
 				digIllus.classList.remove('display');
 						grafDes.classList.remove('display');
+							ui.classList.remove('display');
 		window.scrollTo(0, 0);
 	}
 }

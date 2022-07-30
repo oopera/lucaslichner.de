@@ -129,7 +129,20 @@ a.dark {
 	visibility: hidden;
 }
 
+#ui{
+	opacity: 0;
+	z-index: -200;
+	transition: 0.5s;
+	visibility: hidden;
+}
+
 #sofDev.display{
+	opacity: 1;
+	z-index: 10;
+	width: 300px;
+	visibility: visible;
+}
+#ui.display{
 	opacity: 1;
 	z-index: 10;
 	width: 300px;
@@ -245,6 +258,8 @@ a.dark {
 
 }
 
+
+
 .SoftwareDevelopment.display{
 	padding-right: 0px;
     z-index: 5;
@@ -325,6 +340,9 @@ img {
     transition: transform 0.25s ease;
 }
 
+.bold{
+	font-weight: bold;
+}
 
 img:hover {
 
@@ -332,6 +350,7 @@ img:hover {
     transform:scale(1.5);
 	-webkit-filter: drop-shadow(5px 5px #222);
 	filter: drop-shadow(5px 5px #222);
+	z-index: 26;
 
 }
 
@@ -416,7 +435,10 @@ body{
 }
 #sofDev{
 	display: none;
+}
 
+#ui{
+	display: none;
 }
 #digIllus{
 	display: none;
@@ -441,7 +463,7 @@ body{
 .Header-Container.menu{
 	align-content: center;
 	grid-template-rows: 20% 20% 20% 20% 20%;
-	height: 350px;
+	height: 400px;
 
 }
 
