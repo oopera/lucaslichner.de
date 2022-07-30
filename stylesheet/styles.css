@@ -241,16 +241,17 @@ a.dark {
 	border: black 1pt solid;
 	background-color: white;
 	border-radius: 5px;
-	width: fit-content;
 	height: fit-content;
+
 }
 
 .SoftwareDevelopment.display{
 	padding-right: 0px;
-	padding-top: 150px;
     z-index: 5;
     opacity: 1;
-    width: 50vw;
+	margin-top: 200px;
+	width: 50vw;
+	height: fit-content;
 }
 
 .GraphicDesign{
