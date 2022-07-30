@@ -241,6 +241,8 @@ a.dark {
 	border: black 1pt solid;
 	background-color: white;
 	border-radius: 5px;
+	width: fit-content;
+	height: fit-content;
 }
 
 .SoftwareDevelopment.display{
