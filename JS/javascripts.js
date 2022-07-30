@@ -129,22 +129,18 @@ for (let i = 0; i < switchoo.length; i++) {
 
 function changePageContainerElement(elementToChange){
 	var element = document.getElementById(elementToChange);
-	sofPort.classList.remove('display');
-	abootme.classList.remove('display');
-	if(element.classList.contains('display') == false){
-
-		container.classList.add('scrollable');
-			if(elementToChange == 'Illustrations'){
-				document.getElementById('GraphicDesign').classList.remove('display');
-			}else{
-				document.getElementById('Illustrations').classList.remove('display');
-			}
+			
+	if(element.classList.contains('display') === false){
 			element.classList.add('display');
 
 	}else{
 		sofPort.classList.remove('display');
 		element.classList.remove('display');
 		container.classList.remove('scrollable');
+		sofPort.classList.remove('display');
+		abootme.classList.remove('display');
+		document.getElementById('GraphicDesign').classList.remove('display');
+		document.getElementById('Illustrations').classList.remove('display');
 				container.scrollTo({
  				top: 0,
   				behavior: 'smooth',
