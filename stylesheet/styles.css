@@ -12,6 +12,13 @@ body {
 	overflow: hidden;
 
 }
+
+#root { 
+	position: fixed; 
+	height: 100vh;
+	overflow: hidden;
+}
+
 body.dark {
 	background-color: rgb(37, 37, 37);
 }
@@ -243,29 +250,33 @@ a.dark {
 }
 
 .SoftwareDevelopment{
+	box-sizing: border-box;
 	transition: 0.5s;
-  	grid-template-columns: 1fr 1fr;
   	justify-content: center;
   	text-align: center;
 	top: 0;
 	z-index: -10;
 	opacity: 0;
+	padding: 5px;
 	width: 20px;
 	border: black 1pt solid;
 	background-color: white;
 	border-radius: 5px;
 	height: fit-content;
+	position: absolute;
 
 }
 
 
 
 .SoftwareDevelopment.display{
-	padding-right: 0px;
     z-index: 5;
     opacity: 1;
-	margin-top: 200px;
+	margin-top: 120px;
 	width: 50vw;
+	min-width: 680px;
+	margin-right: 25vw;
+	margin-left: 25vw;
 	height: fit-content;
 }
 
@@ -406,6 +417,7 @@ a:hover{
 }
 
 @media only screen and (max-width: 750px){
+
 body{
 	width: 100vw;
 }
@@ -467,6 +479,13 @@ body{
 
 }
 
+.SoftwareDevelopment.display{
+	width: 250px;
+	min-width: 50px;
+	margin-left: calc(50vw - 125px);
+	margin-right: calc(50vw - 125px);
+}
+
 .hamburger{ 
 	display: block;
 	grid-column: 5;
@@ -480,4 +499,5 @@ body{
 	display: block;
 	visibility:visible;
 	  justify-content: center;
+}
 }
