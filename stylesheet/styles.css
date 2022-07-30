@@ -195,6 +195,11 @@ a.dark {
   	margin-top: 200px;
   	left: 0;
 	z-index: -50;
+	border: black 1pt solid;
+	background-color: white;
+	border-radius: 5px;
+	height: fit-content;
+	position: absolute;
 }
 
 #menu{
