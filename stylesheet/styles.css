@@ -239,6 +239,7 @@ a.dark {
 	opacity: 0;
 	width: 20px;
 	border: black 1pt solid;
+	background-color: white;
 	border-radius: 5px;
 }
 

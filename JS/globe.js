@@ -1,5 +1,5 @@
 function initialize(){
-		var options = {scrollWheelZoom: false, dragging: false, tilting: false}
+		var options = {scrollWheelZoom: true, dragging: true, tilting: true}
         earth = new WE.map('globecontainer', options);
         earth.setView([46.8011, 8.2266], 3);
         WE.tileLayer('https://webglearth.github.io/webglearth2-offline/{z}/{x}/{y}.jpg',{
