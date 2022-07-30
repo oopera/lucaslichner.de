@@ -238,6 +238,8 @@ a.dark {
 	z-index: -10;
 	opacity: 0;
 	width: 20px;
+	border: black 1pt solid;
+	border-radius: 5px;
 }
 
 .SoftwareDevelopment.display{

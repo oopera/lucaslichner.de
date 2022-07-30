@@ -20,28 +20,6 @@ let anim = [
     { t: "lucaslichner.", ms: 100 },
     { t: "lucaslichner", ms: 200 },
     { t: "lucaslichner.", ms: 500 }
-/*
-
-    { t: "Lucaslichner", ms: 50 },
-    { t: "lUcaslichner", ms: 50 },
-    { t: "luCaslichner", ms: 50 },
-    { t: "lucAslichner", ms: 50 },
-    { t: "lucaSlichner", ms: 50 },
-    { t: "lucasLichner", ms: 50 },
-    { t: "lucaslIchner", ms: 50 },
-    { t: "lucasliChner", ms: 100 },
-    { t: "lucaslicHner", ms: 100 },
-    { t: "lucaslichNer", ms: 200 },
-    { t: "lucaslichnEr", ms: 200 },
-    { t: "lucaslichneR", ms: 200 },
-    { t: "lucaslichner,", ms: 100 },
-    { t: "lucaslichner.,", ms: 100 },
-    { t: "lucaslichner..,", ms: 200 },
-    { t: "lucaslichner.,", ms: 100 },
-    { t: "lucaslichner.", ms: 100 },
-    { t: "lucaslichner", ms: 200 },
-    { t: "lucaslichner.", ms: 200 }
-*/
 ];
 let i = 0;
 let update = () => {
